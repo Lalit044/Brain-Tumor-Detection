@@ -112,14 +112,6 @@
             font-size: 14px;
         }
 
-        /* Responsive */
-        @media(max-width: 900px) {
-            .team-container {
-                grid-template-columns: 1fr;
-                padding: 40px;
-            }
-        }
-
         /* Animation */
 @keyframes fadeUp {
     from {
@@ -143,8 +135,83 @@
 .card:nth-child(3) { animation-delay: 0.6s; }
 .card:nth-child(4) { animation-delay: 0.8s; }
 
+/* ========================= */
+/* 📱 Mobile Responsive */
+/* ========================= */
 
-    </style>
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .navbar h2 {
+        margin-bottom: 10px;
+    }
+
+    .navbar div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar a {
+        margin-left: 0;
+    }
+
+    /* Header */
+    .header {
+        padding: 40px 20px 20px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .header p {
+        font-size: 14px;
+    }
+
+    /* Team Grid */
+    .team-container {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+        gap: 25px;
+    }
+
+    /* Cards */
+    .card {
+        padding: 25px 20px;
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .role {
+        font-size: 13px;
+    }
+
+    .desc {
+        font-size: 13px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 15px;
+    }
+}
+
+
+</style>
 </head>
 
 <body>

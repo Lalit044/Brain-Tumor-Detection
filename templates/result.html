@@ -59,9 +59,10 @@
             color: white;
         }
 
-        .image-preview {
-            text-align: center;
-            margin: 40px 0;
+        .image-preview img {
+            max-width: 400px;
+            width: 100%;
+            height: auto;
         }
 
         .image-preview img {
@@ -133,6 +134,82 @@
             margin-top: 60px;
             font-size: 14px;
         }
+
+        /* ========================= */
+/* 📱 Mobile Responsive */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    .header {
+        padding: 30px 20px;
+    }
+
+    .header h1 {
+        font-size: 22px;
+    }
+
+    .main-container {
+        padding: 25px 20px;
+    }
+
+    .highlight-box {
+        padding: 20px;
+    }
+
+    .highlight-box h2 {
+        font-size: 18px;
+    }
+
+    .confidence {
+        font-size: 15px;
+    }
+
+    .risk-badge {
+        font-size: 14px;
+        padding: 8px 18px;
+    }
+
+    .image-preview img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .section h2 {
+        font-size: 18px;
+    }
+
+    .section p,
+    .section li {
+        font-size: 14px;
+    }
+
+    .section ul {
+        margin-left: 15px;
+    }
+
+    /* Grad-CAM Image */
+    .section img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Buttons Stack Vertically */
+    .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 20px 0 0 0;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 15px;
+    }
+}
+
     </style>
 </head>
 
@@ -163,7 +240,8 @@
     <p>This heatmap shows where the AI model focused while making its prediction.</p>
     <div style="text-align:center;">
         <img src="{{ gradcam_image }}" 
-             style="max-width:400px; border-radius:15px; border:3px solid #00eaff;">
+     style="width:100%; max-width:400px; border-radius:15px; border:3px solid #00eaff;">
+
     </div>
 </div>
 
