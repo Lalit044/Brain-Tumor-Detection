@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confusion Matrix | AI BrainCare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 80px;
+            background: rgba(0,0,0,0.4);
+        }
+
+        .navbar h2 {
+            color: #00eaff;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        .navbar a:hover {
+            color: #00eaff;
+        }
+
+        .container {
+            padding: 60px 100px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #00eaff;
+        }
+
+        p {
+            margin-bottom: 40px;
+            color: #e0e0e0;
+        }
+
+        .matrix-box {
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 25px;
+            display: inline-block;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.6);
+        }
+
+        .matrix-box img {
+            max-width: 100%;
+            border-radius: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            background: linear-gradient(45deg, #00eaff, #0072ff);
+            color: white;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 20px #00eaff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0,0,0,0.4);
+            margin-top: 60px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <h2>AI BrainCare</h2>
+    <div>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/team">Team</a>
+        <a href="/confusion-matrix">Confusion Matrix</a>
+    </div>
+</div>
+
+<div class="container">
+    <h1>Model Performance - Confusion Matrix</h1>
+    <p>This matrix shows how well the model classifies each tumor category.</p>
+
+    <div class="matrix-box">
+        <img src="{{ cm_image }}" alt="Confusion Matrix">
+    </div>
+
+    <br>
+    <a href="/" class="btn">Back to Home</a>
+</div>
+
+<footer>
+    © 2026 AI BrainCare | MCA AI & DS Mini Project
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About | AI BrainCare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 80px;
+            background: rgba(0,0,0,0.4);
+        }
+
+        .navbar h2 {
+            color: #00eaff;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        .navbar a:hover {
+            color: #00eaff;
+        }
+
+        .container {
+            padding: 60px 100px;
+        }
+
+        h1 {
+            margin-bottom: 25px;
+            color: #00eaff;
+        }
+
+        p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #e0e0e0;
+        }
+
+        .tech-box {
+            margin-top: 40px;
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        .tech-box h2 {
+            margin-bottom: 15px;
+            color: #00eaff;
+        }
+
+        ul {
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0,0,0,0.4);
+            margin-top: 50px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <h2>AI BrainCare</h2>
+    <div>
+        <a href="/">Home</a>
+        <a href="/confusion-matrix">Confusion Matrix</a>
+        <a href="/about">About</a>
+        <a href="/team">Team</a>
+    </div>
+</div>
+
+<div class="container">
+
+    <h1>About This Project</h1>
+
+    <p>
+        AI BrainCare is a deep learning based web application developed as an MCA Mini Project 
+        under Artificial Intelligence & Data Science specialization.
+    </p>
+
+    <p>
+        The system uses Transfer Learning with MobileNetV2 architecture to classify 
+        brain MRI images into four categories: Glioma, Meningioma, Pituitary Tumor, and No Tumor.
+    </p>
+
+    <p>
+        This project demonstrates the practical application of Artificial Intelligence 
+        in healthcare imaging analysis while maintaining ethical responsibility and medical disclaimer standards.
+    </p>
+
+    <div class="tech-box">
+        <h2>Technologies Used</h2>
+        <ul>
+            <li>Python</li>
+            <li>TensorFlow & Keras</li>
+            <li>Transfer Learning (MobileNetV2)</li>
+            <li>Flask Web Framework</li>
+            <li>HTML, CSS</li>
+            <li>Image Data Augmentation</li>
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 AI BrainCare | MCA AI & DS Mini Project
+</footer>
+
+</body>
+</html>

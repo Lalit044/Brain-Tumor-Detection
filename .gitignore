@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+static/uploads/
+static/report.pdf
+static/gradcam.jpg
+static/confusion_matrix.png
