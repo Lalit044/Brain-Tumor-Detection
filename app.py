@@ -30,7 +30,7 @@ dummy_input = tf.zeros((1, 224, 224, 3))
 model(dummy_input)
 
 
-class_labels = ['glioma', 'meningioma', 'pituitary', 'no_tumor']
+class_labels = ['glioma', 'meningioma', 'no_tumor', 'pituitary']
 
 # ------------------ Tumor Info ------------------
 tumor_info = {
@@ -257,3 +257,5 @@ if __name__ == "__main__":
 # if __name__ == "__main__":
 #     port = int(os.environ.get("PORT", 10000))
 #     app.run(host="0.0.0.0", port=port)
+
+#venv\Scripts\activate
