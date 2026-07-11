@@ -132,7 +132,7 @@ This improves model interpretability in medical diagnosis scenarios.
 
 ### 1️⃣ Clone Repository
 
-git clone https://github.com/YOUR_USERNAME/AI-Brain-Tumor-Detection.git
+git clone https://github.com/Lalit044/Brain-Tumor-Detection)
 cd AI-Brain-Tumor-Detection
 
 
